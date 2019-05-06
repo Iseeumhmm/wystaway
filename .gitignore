@@ -1,0 +1,27 @@
+
+/design
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+#Wordpress
+/server/wp-admin
+/server/wp-includes
+/server/wp-content/languages
+# dependencies
+/client/node_modules
+/client/.pnp
+.pnp.js
+
+# testing
+/client//coverage
+
+
+
+# misc
+/client/.DS_Store
+/client/.env.local
+/client/.env.development.local
+/client/.env.test.local
+/client/.env.production.local
+
+/client/npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
