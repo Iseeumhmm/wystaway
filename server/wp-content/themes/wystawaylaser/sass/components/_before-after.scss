@@ -1,0 +1,15 @@
+.before-after-img {
+    border: 4px solid $dark-blue; 
+    border-radius: 4rem;
+    box-shadow: 5px 6px 8px #ccc;
+    color: $dark-blue;
+    height: 45rem;
+    width: 36rem;
+    background-size: cover;
+    background-position: center;
+    margin: 6rem 3rem 1rem;
+}
+.img-text {
+    font-size: $font-large;
+    margin: 0 3rem 3rem;
+}

@@ -1,0 +1,31 @@
+/*!
+Theme Name:         Angie Vanderwyst
+Theme URI:          http://underscores.me/
+Description:        WystAway Laser Custom Website
+Version:            1.0.0
+Author:             Redding Designs
+Author URI:         https://rickheffren.com
+
+License:            MIT License
+License URI:        http://opensource.org/licenses/MIT
+*/
+
+// Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+//abstracts
+@import './abstracts/variables';
+
+//base
+@import "./base/base";
+
+//components
+@import "./components/navbar";
+@import "./components/cta-banner";
+@import "./components/price-list";
+@import "./components/footer";
+@import "./components/faqs";
+@import "./components/before-after";
+
+//pages
+@import "./pages/home";

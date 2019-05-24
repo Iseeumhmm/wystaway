@@ -1,0 +1,74 @@
+.row {
+    padding: 0 8rem;
+}
+.btn {
+    color: #FFFFFFFF;
+    width: 30rem;
+    height: 5rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border: 2px solid white;
+}
+.profile-img {
+    height: 20vh;
+    width: 20vh;
+    background-size: cover;
+    background-position: top;
+    border-radius: 15rem;
+}
+.cta-banner {
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    .btn, .phone, .email {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .first-name {
+        font-size: $font-large;
+        letter-spacing: .1rem;
+    }
+    .phone, .email {
+        display: block;
+        font-size: $font-medium;
+        letter-spacing: .1rem;
+    }
+    
+    hr.dash {
+        margin: 1rem auto;
+        border-top: 1px solid white;
+        width: 20%;
+    }
+    &-first {
+        background-color: $light-blue;
+    }
+    &-second {
+        background-color: $dark-blue;
+    }
+}
+
+// ***********************  MEDIA QUERIES  ***********************
+
+@media (max-width: 1560px) {
+    
+    .btn {
+        width: 20rem;
+        font-size: 1.25rem;
+    }
+    .cta-banner {
+        font-size: 1.25rem;
+        .first-name {
+            font-size: $font-medium;
+            letter-spacing: .1rem;
+        }
+        .phone, .email {
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+        }
+    }
+}
+
+@media (max-width: 1320px) {
+    .row {
+        padding: 0 4rem;
+    }
+}

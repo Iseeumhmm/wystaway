@@ -81,6 +81,25 @@ if ( ! function_exists( 'wystawaylaser_setup' ) ) :
 		) );
 	}
 endif;
+
+/* MOVE style.css */
+add_action( 'wp_enqueue_scripts', 'enqueue_theme_css' );
+
+function enqueue_theme_css()
+{
+    wp_enqueue_style(
+        'default',
+        get_template_directory_uri() . '/css/default.css'
+    );
+}
+
+/* Add Scripts */
+
+wp_register_script( 'jQuery', 'https://code.jquery.com/jquery-migrate-3.0.1.min.js"
+integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4="
+crossorigin="anonymous', null, null, true );
+wp_enqueue_script('jQuery');
+
 add_action( 'after_setup_theme', 'wystawaylaser_setup' );
 
 /**
@@ -97,6 +116,100 @@ function wystawaylaser_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'wystawaylaser_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'wystawaylaser_content_width', 0 );
+
+/**
+ * Enqueue Font Awesome.
+ */
+function custom_load_font_awesome() {
+    wp_enqueue_style( 'font-awesome-free', 'https://use.fontawesome.com/releases/v5.8.2/css/all.css' );
+}
+add_action( 'wp_enqueue_scripts', 'custom_load_font_awesome' );
+
+/**
+ * CUSTOM FAQ POST TYPE
+ */
+
+function faq_init() {
+    // set up product labels
+    $labels = array(
+        'name' => 'FAQs',
+        'singular_name' => 'FAQs',
+        'add_new' => 'Add New FAQ',
+        'add_new_item' => 'New FAQ',
+        'edit_item' => 'Edit FAQ',
+        'new_item' => 'New FAQ',
+        'all_items' => 'All FAQs',
+        'view_item' => 'View FAQ',
+        'search_items' => 'Search FAQs',
+        'not_found' =>  'No FAQ Found',
+        'not_found_in_trash' => 'No FAQs found in Trash', 
+        'parent_item_colon' => '',
+        'menu_name' => 'FAQs',
+    );
+    
+    // register post type
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'faq'),
+        'query_var' => true,
+        'menu_icon' => 'dashicons-randomize',
+        'supports' => array(
+			'title',
+            'custom-fields'
+        )
+    );
+    register_post_type( 'faqs', $args );
+    
+}
+add_action( 'init', 'faq_init' );
+
+/**
+ * CUSTOM BEORE AFTER POST TYPE
+ */
+
+function beforeAfter_init() {
+    // set up product labels
+    $labels = array(
+        'name' => 'Before and After',
+        'singular_name' => 'Before and After',
+        'add_new' => 'Add New Before and After',
+        'add_new_item' => 'New Before and After',
+        'edit_item' => 'Edit Before and After',
+        'new_item' => 'New Before and After',
+        'all_items' => 'All Before and After',
+        'view_item' => 'View Before and After',
+        'search_items' => 'Search Before and After',
+        'not_found' =>  'No Before and After Found',
+        'not_found_in_trash' => 'No Before and After found in Trash', 
+        'parent_item_colon' => '',
+        'menu_name' => 'Before and After',
+    );
+    
+    // register post type
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'beforeAfter'),
+        'query_var' => true,
+        'menu_icon' => 'dashicons-images-alt2',
+        'supports' => array(
+			'title',
+            'custom-fields'
+        )
+    );
+    register_post_type( 'beforeAfter', $args );
+    
+}
+add_action( 'init', 'beforeAfter_init' );
 
 /**
  * Register widget area.

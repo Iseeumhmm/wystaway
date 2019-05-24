@@ -1,0 +1,18 @@
+.price-list {
+    padding: 3rem 0;
+    color: $light-blue;
+    h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $font-large;
+        margin-bottom: 3rem;
+    }
+    table {
+        font-size: $font-medium;
+    }
+    td {
+        padding: 0 2rem;
+    }
+    .last {
+        text-align: right;
+    }
+}

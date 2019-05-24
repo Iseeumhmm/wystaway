@@ -1,0 +1,29 @@
+footer {
+    margin-top: 5rem;
+    background-color: $light-blue;
+    h1 {
+        font-size: $font-x-large;
+    }
+    .social {
+        padding-left: 1rem;
+    }
+}
+.es_subscription_message {
+    position: relative;
+    bottom: 0;
+    color: $green !important;
+}
+.es-field-wrap{
+    margin: 0;
+    padding: 1rem 0 0 0;
+    display: inline-block;
+    label { margin: 0; }
+
+}
+.es_textbox_button {
+    border-radius: 5px;
+    padding: 0 1rem;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}

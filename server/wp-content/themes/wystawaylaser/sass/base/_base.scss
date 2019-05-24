@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%; //1 rem = 10px : 10px/16px = 62.5% 
+}
+body, html {
+    color: #FFFFFFFF;
+    font-family: Arial, sans-serif;
+    margin-top: 0 !important;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    box-sizing: border-box;   
+    font-size: 1.5rem;
+    a,
+    a:link,
+    a:visited,
+    a:hover {
+        text-decoration: none !important;
+        color: inherit !important;
+        cursor: pointer;
+    }
+    h1 {
+        font-size: $font-large;
+    }
+    
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+}
