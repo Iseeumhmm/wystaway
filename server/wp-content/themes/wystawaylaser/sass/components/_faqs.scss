@@ -1,10 +1,30 @@
-section {
+.faqs {
     h2 { 
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: $font-x-large; 
+        margin-top: 8rem;
     }
     .heading {
         font-size: $font-large;
-        margin: 2rem 0;
+        margin: 3rem 0;
     }
+    .faq-dash {
+        display: none;
+    }
+}
+
+@media( max-width: 991px ){
+    .faqs {
+        h2 {
+            font-size: $font-large;
+            margin-top: 0;
+        }
+        .faq-dash {
+            display: block;
+            border-top: 1px solid $dark-blue;
+            width: 80%;
+            margin: 6rem auto 3rem;
+        }
+    }
+    
 }

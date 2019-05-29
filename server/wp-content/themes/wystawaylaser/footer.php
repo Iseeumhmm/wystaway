@@ -13,11 +13,11 @@
 	</div><!-- #content -->
 	    <footer>
             <div class="container-fluid">
-                <div class="row px-0 d-flex align-items-center  text-center" style="height: 20vh;">
-                    <div class="col-md-3">
+                <div class="row px-0 d-flex align-items-center text-center" style="padding: 3rem 0;">
+                    <div class="col-lg-3">
                        <h1>WystAway Laser</h1>
                     </div>
-                    <div class="col-md-3 d-flex justify-content-center">
+                    <div class="col-lg-3 d-flex justify-content-center">
                         <table class="text-left">
                             <tr>
                                 <td><i class="fab fa-facebook-f"></i></td>
@@ -33,14 +33,14 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="email col-md-3 d-flex justify-content-center">
+                    <div class="email col-lg-3 d-flex justify-content-center">
                         <div>
                             <p>Get updates on out latest deals</p>
                             <?php es_subbox( $namefield =  "NO", $group = "Mailing List" );?>
                         </div>      
                     </div>
                     
-                    <div class="col-md-3 d-flex justify-content-center">
+                    <div class="col-lg-3 d-flex justify-content-center">
                         <div>
                             <ul class="text-left">
                                 <li>

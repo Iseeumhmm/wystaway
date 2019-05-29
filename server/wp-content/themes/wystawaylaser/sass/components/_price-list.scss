@@ -16,3 +16,17 @@
         text-align: right;
     }
 }
+
+@media( max-width: 450px) {
+    .price-list {
+        h2 {
+            font-size: $font-medium;
+        }
+        table {
+            font-size: $font-small;
+        }
+        td {
+            padding: 0 1rem;
+        }
+    }
+}

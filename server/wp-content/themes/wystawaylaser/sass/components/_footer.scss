@@ -1,8 +1,9 @@
 footer {
     margin-top: 5rem;
     background-color: $light-blue;
+    height: 100%;
     h1 {
-        font-size: $font-x-large;
+        font-size: $font-large;
     }
     .social {
         padding-left: 1rem;
@@ -27,3 +28,28 @@ footer {
     background-color: transparent;
     border: 1px solid #FFFFFF;
 }
+
+@media( max-width: 1120px ){
+    footer {
+        h1 { font-size: $font-medium; }
+        li {
+            font-size: $font-small; 
+        }
+        td {
+            font-size: $font-small; 
+        }
+        .email {
+            font-size: $font-small;
+        }
+    }
+}
+@media( max-width: 991px ){
+    footer {
+        h1 { font-size: $font-large; }
+        div.col-lg-3 {
+            padding: 1.5rem 0;
+        }
+        li { text-align: center; }
+    }
+}
+

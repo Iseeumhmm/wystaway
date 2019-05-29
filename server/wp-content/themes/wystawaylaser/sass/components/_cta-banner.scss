@@ -11,13 +11,15 @@
     border: 2px solid white;
 }
 .profile-img {
-    height: 20vh;
-    width: 20vh;
+    overflow: hidden;
+    height: 16rem;
+    width: 16rem;
     background-size: cover;
     background-position: top;
     border-radius: 15rem;
 }
 .cta-banner {
+    padding: 3rem 0;
     width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     .btn, .phone, .email {
@@ -70,5 +72,36 @@
 @media (max-width: 1320px) {
     .row {
         padding: 0 4rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .cta-container {
+        margin: 3rem;
+    }
+    .cta-banner {
+        padding-top: 6rem;
+    }
+    .btn {
+        margin: 6rem 0 0;
+    }
+    .col-lg-5.text-right { 
+        text-align: center !important; 
+        padding: 6rem 0 3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .row {
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .cta-container {
+        margin: 5px;
+    }
+    .profile-img {
+        height: 10rem;
+        width: 10rem;
     }
 }

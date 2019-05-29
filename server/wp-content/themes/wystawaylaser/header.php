@@ -31,7 +31,7 @@
 
         <header id="masthead" class="site-header">
         <div class="container-fluid p-0" id="outer"></div>
-            <nav class="navbar navbar-light">
+            <nav class="navbar navbar-light nav-center">
 				<a href="/index" class="navbar-brand">
 					<img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo">
 				</a>
@@ -39,31 +39,19 @@
 					<img class="menu" src="<?php echo get_template_directory_uri(); ?>/img/menu.png"/>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarMenu">
-                    <div class="navbar-nav ml-auto navbar-mobile-center">
+                    <div class="navbar-nav mr-auto navbar-mobile-center">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a href="/book-a-tee" class="nav-link px-nav-link">Book a tee</a>
+                                <a href="#Angie" class="nav-link px-nav-link">Book with Angie</a></a>
                             </li>
                             <li class="nav-item">
-                                <a href="/about" class="nav-link px-nav-link">About</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" area-expanded="false">Golf</a>
-                                <div class="dropdown-menu">
-                                    <a href="/the-course" class="dropdown-item">The Course</a>
-                                    <a href="/proshop" class="dropdown-item">The Pro Shop</a>
-                                    <a href="/lessons" class="dropdown-item">Lessons</a>
-                                    <a href="/league" class="dropdown-item">League</a>
-                                </div>
+                                <a href="#Cassie" class="nav-link px-nav-link">Book with Cassie</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/events" class="nav-link px-nav-link">Events</a>
+                                <a href="#Price-List" class="nav-link px-nav-link">Price List</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/contact" class="nav-link px-nav-link">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/greenfees" class="nav-link px-nav-link">Green fees</a>
+                                <a href="#FAQ" class="nav-link px-nav-link">FAQ's</a>
                             </li>
                         </ul>
                     </div>

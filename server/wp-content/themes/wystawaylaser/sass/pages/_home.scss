@@ -7,11 +7,13 @@
 
 }
 .sale {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: right;
     position: absolute;
-    top: 3rem;
+    top: 4rem;
     right: 10rem;
     &-img {
+        float: right;
         width: 32rem;
         height: 21.3rem;
         background-size: cover;
@@ -20,7 +22,7 @@
         border: 1px solid white;
     }
     .heading {
-        letter-spacing: .35rem;
+        letter-spacing: .25rem;
         font-weight: 600;
         font-size: 3.5rem;
     }
@@ -31,4 +33,66 @@
         font-size: 2rem;
         text-align: center;
     }
+    hr.sale-dash {
+        display: hidden;
+        margin: 3rem auto 0;
+        border-top: 1px solid $light-blue;
+        width: 30%;
+    }
+}
+
+@media( max-width: 1200px ){
+    .sale {
+        top: 5rem;
+        .img-container {
+            width: auto;
+        }
+        &-img {
+            width: 16rem;
+            height: 10.515rem;
+            margin: 1rem 0;
+        }
+        .heading {
+            font-size: 1.75rem;
+            letter-spacing: .15rem;
+        }
+        .image-dates {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media( max-width: 920px ){
+    .sale {
+        padding-top: 3rem;
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+        height: auto;
+        text-align: center;
+        &-img {
+            border: 1px solid $light-blue;
+        }
+        .img-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .heading {
+            color: $light-blue;
+        }
+        .image-dates {
+            color: $light-blue;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            left: 0;
+            position: relative;
+        }
+        hr.sale-dash {
+            display: inline-block;
+        }
+    }
+    
 }
